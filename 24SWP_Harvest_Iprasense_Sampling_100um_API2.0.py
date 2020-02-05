@@ -26,9 +26,9 @@ metadata = {
 
 def run(protocol: protocol_api.ProtocolContext): 
     # labware
-    plate_pel = protocol.load_labware('corning_96_wellplate_360ul_flat', '9') # add dimensions of DNA stock plate and replace this.
+    plate_pel = protocol.load_labware('corning_96_wellplate_360ul_flat', '9')
     plate_dil = protocol.load_labware('nunc_96_ubottom', '6')
-    plate_ip = protocol.load_labware('iprasense_48_slide', '3') # replace with 'lonza_96_electroporation' for actual
+    plate_ip = protocol.load_labware('iprasense_48_slide', '3')
     trough = protocol.load_labware('axygen_12_reservior_22ml', '8')
     tip300_1 = protocol.load_labware('opentrons_96_tiprack_300ul', '7')
     tip300_2 = protocol.load_labware('opentrons_96_tiprack_300ul', '10')
