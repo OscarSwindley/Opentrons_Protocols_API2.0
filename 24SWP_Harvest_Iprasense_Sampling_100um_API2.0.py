@@ -52,7 +52,7 @@ def run(protocol: protocol_api.ProtocolContext):
         p50m.dispense(30, plate_dil.wells()[8*i])
         protocol.delay(seconds=0.5)
         p50m.blow_out(trough.wells()[0])
-    p50m.drop_tip()
+    p50m.return_tip()
     p50m.reset_tipracks()
 
     #Step 2: Mix and transfer 300ul 24wp_culture 1 into supernatant plate, transfer 30ul into dilution plate
